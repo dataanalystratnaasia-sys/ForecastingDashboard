@@ -115,11 +115,11 @@ if mape_val != "-":
     try:
         mape_num = float(str(mape_val).replace(",", ".").replace("%", ""))
         akurasi = round(100 - mape_num, 2)
-        st.info(f"Persentase keakuratan prediksi adalah **{akurasi}%** (100% - MAPE {mape_num}%)")
+        st.info(f"Persentase keakuratan prediksi adalah **{akurasi}%**")
     except ValueError:
-        st.info("Persentase keakuratan prediksi adalah (100% - MAPE%)")
+        st.info("Prediksi untuk kategori produk ini belum tersedia")
 else:
-    st.info("Persentase keakuratan prediksi adalah (100% - MAPE%)")
+    st.info("Prediksi untuk kategori produk ini belum tersedia")
 
 # =====================================================
 # TABS
